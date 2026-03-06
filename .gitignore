@@ -1,4 +1,24 @@
-*.json
-.venv
-__pycache__
-.env
+Requerimientos Funcionales (Lo que hace el sistema):
+
+El sistema debe recibir una consulta del usuario a través de una URL dinámica (/llm/{prompt}).
+
+El sistema debe conectarse con el modelo Gemini-3-Flash para procesar la información.
+
+El sistema debe devolver la respuesta generada por la IA .
+
+El sistema debe cargar variables de entorno para proteger la API Key.
+
+El sistema debe imprimir la respuesta en la consola del servidor antes de enviarla al cliente.
+
+
+Requerimientos No Funcionales (Características del sistema):
+
+Seguridad: La API Key no debe estar escrita directamente en el código (uso de .env).
+
+Disponibilidad: La API debe estar construida sobre el framework FastAPI para asegurar respuestas rápidas.
+
+Mantenibilidad: El código debe estar organizado en un repositorio de GitHub con un archivo .gitignore.
+
+Escalabilidad: El uso de funciones asíncronas (async def) para permitir múltiples peticiones simultáneas.
+
+Usabilidad: La respuesta debe ser clara y estar estructurada correctamente para que otros sistemas la entiendan.
